@@ -21,7 +21,7 @@
                               'http://loinc.org|2085-9', // HDL
                               'http://loinc.org|2089-1', // LDL
                               //'http://loinc.org|55284-4'] // BP Systolic and Diastolic // -> Discoruaged by loinc.org
-                              'http://loinc.org|85354-9'] // BP Systolic and Diastolic // BP Systolic and Diastolic
+                              'http://loinc.org|85354-9'] // BP Systolic and Diastolic 
                               
                       }
                     }
