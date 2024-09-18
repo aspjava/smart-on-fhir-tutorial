@@ -36,7 +36,7 @@
 
             // 9-18-2024 fix error per R4
             var fam = patient.name[0].family;
-            if( Array.IsArray(fam) ){    // On DSTU2, family is an array
+            if( Array.isArray(fam) ){    // On DSTU2, family is an array
               lname = fam.join(' ');  
             }
             else{                        // On R4, family is a string
