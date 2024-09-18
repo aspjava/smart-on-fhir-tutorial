@@ -33,7 +33,16 @@
 
           if (typeof patient.name[0] !== 'undefined') {
             fname = patient.name[0].given.join(' ');
-            lname = patient.name[0].family.join(' ');
+
+            // 9-18-2024 fix error per R4
+            var fam = patient.name[0].family;
+            if( Array.IsArray(fam) ){    // On DSTU2, family is an array
+              lname = fam.join(' ');  
+            }
+            else{                        // On R4, family is a string
+              lname = fam;
+            }
+            
           }
 
           var height = byCodes('8302-2');
