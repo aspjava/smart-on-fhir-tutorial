@@ -40,12 +40,15 @@
             // 10-14-25
             // patient.name[0].given is an array but patient.name[0].family is not.        
             //
+            /*
             if( Array.isArray(patient.name[0].family) ){
               lname = patient.name[0].family.join(' ');
             }
             else{
               lname = patient.name[0].family;
             }
+            */
+            lname = patient.name[0].family;
           }
 
           var height = byCodes('8302-2');
