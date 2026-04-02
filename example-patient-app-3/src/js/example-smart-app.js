@@ -36,7 +36,7 @@
             console.log('patient.name[0]', patient.name);
 
             fname = patient.name[0].given.join(' ');
-            lname = patient.name[0].family; // family is not an array.
+            lname = patient.name[0].family; // family is not an array
           }
 
           var height = byCodes('8302-2');
