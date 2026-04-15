@@ -31,11 +31,13 @@
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
       });
       */
+      const state_val = crypto.randomUUID();
       FHIR.oauth2.authorize({
         "client": {
           "client_id": "ad137f25-3bec-47d3-a0b6-6e2124bc148a",
           "scope": "patient/Patient.read patient/Observation.read launch online_access openid profile",
-          "redirect_uri": "https://aspjava.github.io/smart-on-fhir-tutorial/example-patient-app-1/"
+          "redirect_uri": "https://aspjava.github.io/smart-on-fhir-tutorial/example-patient-app-1/",
+          "state": state_val, 
         },
         "server": "https://fhir-myrecord.sandboxcerner.com/r4/db9615e9-d052-4ac9-a19b-c17a9841e254"
       });
