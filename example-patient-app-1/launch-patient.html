@@ -27,19 +27,9 @@
     <script>
       
       FHIR.oauth2.authorize({
-        'client_id': 'ad137f25-3bec-47d3-a0b6-6e2124bc148a', // Patient App 1
-        //'client_id': '100b8434-f761-4dc8-bb50-f58de05a9dd5', // OneRecord
+        'client_id': 'ad137f25-3bec-47d3-a0b6-6e2124bc148a', // Patient App 1      
         'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile'
       });
-      
-      /*
-      FHIR.oauth2.authorize({
-        'client_id': 'ad137f25-3bec-47d3-a0b6-6e2124bc148a',
-        'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile', 
-        'iss': 'https://fhir-myrecord.sandboxcerner.com/r4/db9615e9-d052-4ac9-a19b-c17a9841e254', 
-        'redirect_uir': 'https://aspjava.github.io/smart-on-fhir-tutorial/example-patient-app-1/'
-      });
-      */
       
     </script>
     <div class="spinner">
